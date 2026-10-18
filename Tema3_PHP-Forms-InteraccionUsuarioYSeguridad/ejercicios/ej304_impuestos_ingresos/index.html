@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- EJER 304: SOLICITAR EL NOMBRE Y EL RANGO DE INGRESOS MENSUALES -->
+    <title>Ejercicio 304</title>
+  </head>
+
+  <body>
+    <form method="post" action="proceso_formulario.php">
+      <!-- SOLICITAR EL NOMBRE DE LA PERSONA -->
+      Ingrese el nombre: <input type="text" name="nombre" required />
+      <br/>
+
+      <!-- SELECCIONAR EL RANGO DE INGRESOS -->
+      Seleccione en que rango se ubican sus ingresos:
+      <select name="ingresos" required>
+        <option value="">Seleccione una opcion</option>
+        <option value="1">De 1 a 1000</option>
+        <option value="2">De 1001 a 3000</option>
+        <option value="3">Mas de 3000</option>
+      </select>
+      <br/>
+
+      <input type="submit" value="Confirmar" />
+    </form>
+  </body>
+</html>
