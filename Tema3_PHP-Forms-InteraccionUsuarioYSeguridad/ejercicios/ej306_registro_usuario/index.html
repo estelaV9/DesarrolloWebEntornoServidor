@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- EJER 306: CREAR UN FORMULARIO DE REGISTRO DE USUARIO -->
+    <title>Formulario de registro</title>
+  </head>
+
+  <body>
+    <h1>Formulario de registro</h1>
+
+    <form action="procesar_formulario.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required/><br>
+
+      <label for="correo">Correo electronico:</label>
+      <input type="email" id="correo" name="correo" required/><br>
+
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required/><br>
+
+      <label for="confirmar_contrasena">Confirmar contraseña:</label>
+      <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required/><br>
+
+      <input type="submit" value="Registrarse" />
+    </form>
+  </body>
+</html>
